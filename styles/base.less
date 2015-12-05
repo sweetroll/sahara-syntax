@@ -47,14 +47,13 @@ atom-text-editor, :host {
 
 .comment {
   color: @base1;
-  font-style: italic;
 }
 
 .entity {
   color: @yellow;
 
   .punctuation {
-    color: @red
+    color: @yellow
   }
 }
 .entity.other.attribute-name.placeholder.scss {
@@ -88,7 +87,7 @@ atom-text-editor, :host {
   &.numeric,
   &.boolean,
   &.symbol, &.symbol .punctuation {
-    color: @violet;
+    color: @cyan;
   }
 
   &.symbol.hashkey {
@@ -129,6 +128,18 @@ atom-text-editor, :host {
   color: @base1;
 }
 
+.at-rule {
+    .control {
+        color: @red;
+    }
+    .keyword {
+        color: @red;
+    }
+    .function {
+        color: @green;
+    }
+}
+
 .property-name {
   color: @green;
 }
@@ -136,6 +147,21 @@ atom-text-editor, :host {
 .property-value {
   .unit {
     color: @base0;
+  }
+  .numeric {
+    color: @violet;
+  }
+  .support {
+      color: @syntax-text-color;
+  }
+  .interpolation {
+    color: @green;
+  }
+  .function {
+      color: @green;
+  }
+  .unit {
+      color: @green;
   }
 }
 
@@ -148,7 +174,7 @@ atom-text-editor, :host {
   }
 
   .punctuation.string {
-    color: @red;
+    color: @cyan;
   }
 
   &.regexp {
