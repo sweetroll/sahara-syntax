@@ -1,9 +1,9 @@
 {
-  "name": "solarized-light-syntax",
+  "name": "sahara-syntax",
   "theme": "syntax",
   "version": "0.23.0",
-  "description": "A light syntax theme using the solarized colors",
-  "repository": "https://github.com/atom/solarized-light-syntax",
+  "description": "A light syntax theme based on the solarized light theme",
+  "repository": "https://github.com/atom/sahara-syntax",
   "license": "MIT",
   "engines": {
     "atom": ">0.50.0"
